@@ -1,4 +1,10 @@
 ---
+- name: "Install powertools dependencies: dnf-plugins-core"
+  shell: "pkcon install -y dnf-plugins-core"
+  ignore_errors: true
+- name: "Enable powertools repo"
+  shell: "pkcon repo-enable powertools"
+  ignore_errors: true
 - name: "Install dependencies: {{ APP_DEPENDENCIES | join(' ') }}"
   shell: "pkcon install -y {{ item }}"
   loop: "{{ APP_DEPENDENCIES }}"
