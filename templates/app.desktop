@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name={{ APP_DISPLAY_NAME }}
+GenericName={{ APP_GENERIC_NAME }}
+Comment={{ APP_COMMENT }}
+Icon={{ APP_ICON }}
+Exec=env LD_LIBRARY_PATH={{ APP_PREFIX }}/lib64 {{ APP_PREFIX }}/bin/shotwell %U
+Terminal=false
+Categories={{ APP_CATEGORIES }}
+Keywords={{ APP_KEYWORDS }}
+

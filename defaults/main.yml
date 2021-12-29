@@ -1,0 +1,52 @@
+---
+APP_NAME: shotwell
+APP_DEPENDENCIES:
+  - git
+  - gcc
+  - make
+  - desktop-file-utils
+  - gettext
+  - libappstream-glib-devel
+  - json-glib-devel
+  - atk-devel
+  - gtk3-devel
+  - gnome-doc-utils
+  - gtk3-devel
+  - libgee-devel
+  - libgudev-devel
+  - libgexiv2-devel
+  - glib2-devel
+  - gstreamer1-devel
+  - gstreamer1-plugins-base-devel
+  - gtk3-devel
+  - libexif-devel
+  - libgphoto2-devel
+  - LibRaw-devel
+  - libsoup-devel
+  - libxml2-devel
+  - rest-devel
+  - sqlite-devel
+  - webkit2gtk3-devel
+  - vala-devel
+  - libappstream-glib-devel
+  - yelp-tools
+  - gcr-devel
+  - libgdata-devel
+  - libwebp-devel
+  - meson
+  - vala
+APP_PREFIX: "{{ lookup('env', 'HOME') }}/.local"
+APP_SRC: "{{ APP_PREFIX }}/src/{{ APP_NAME  }}"
+APP_REPO: https://gitlab.gnome.org/GNOME/shotwell.git
+APP_TAG: shotwell-0.30.9
+APP_README: "{{ APP_SRC }}/README.md"
+APP_DESKTOP: "{{ lookup('env', 'HOME') }}/.local/share/applications/{{ APP_NAME }}.desktop"
+APP_ICON: "{{ APP_NAME }}"
+APP_EXEC: "e{{ APP_PREFIX }}/bin/shotwell"
+APP_KEYWORDS: "Graphics;Photography;Photo;Pictures;"
+APP_CATEGORIES: "Graphics;Photography;GNOME;GTK;"
+APP_COMMENT: "A photo organizer"
+APP_DISPLAY_NAME: Shotwell
+APP_GENERIC_NAME: A photo organizer
+
+
