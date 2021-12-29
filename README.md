@@ -1,4 +1,4 @@
-# Install sqlite
+# Install shotwell
 
 ## Install the latest Python and setup a new Python virtualenv
 
@@ -20,30 +20,30 @@ pip install --upgrade pip
 pip install ansible
 ```
 
-## Install sqlite as a prerequisite
+## Install shotwell as a prerequisite
 
-Follow these instructions to install a recent version of sqlite using Ansible automation: 
+Follow these instructions to install a recent version of shotwell using Ansible automation: 
 
-https://github.com/computate-org/computate_sqlite
+https://github.com/computate-org/computate_shotwell
 
-## Install the sqlite ansible role
+## Install the shotwell ansible role
 
 ### Create a directory for the ansible role. 
 
 ```bash
-install -d ~/.ansible/roles/computate.computate_sqlite
+install -d ~/.ansible/roles/computate.computate_shotwell
 ```
 
-### Clone the sqlite ansible role. 
+### Clone the shotwell ansible role. 
 
 ```bash
-git clone git@github.com:computate-org/computate_sqlite.git ~/.ansible/roles/computate.computate_sqlite
+git clone git@github.com:computate-org/computate_shotwell.git ~/.ansible/roles/computate.computate_shotwell
 ```
 
-## Run the sqlite ansible playbook to install the application locally. 
+## Run the shotwell ansible playbook to install the application locally. 
 
 ```bash
-cd ~/.ansible/roles/computate.computate_sqlite
+cd ~/.ansible/roles/computate.computate_shotwell
 ansible-playbook install.yml
 ```
 
