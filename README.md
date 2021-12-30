@@ -20,11 +20,11 @@ pip install --upgrade pip
 pip install ansible
 ```
 
-## Install shotwell as a prerequisite
+## Install sqlite as a prerequisite
 
-Follow these instructions to install a recent version of shotwell using Ansible automation: 
+Follow these instructions to install a recent version of sqlite using Ansible automation: 
 
-https://github.com/computate-org/computate_shotwell
+https://github.com/computate-org/computate_sqlite
 
 ## Install the shotwell ansible role
 
