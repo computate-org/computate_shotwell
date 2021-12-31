@@ -8,8 +8,19 @@ pkcon install -y python3
 pkcon install -y python3-pip
 pkcon install -y python3-virtualenv
 virtualenv-3 ~/python
+```
+
+### Load the python virtual environment and activate it for new terminals
+
+```bash
 source ~/python/bin/activate
 echo "source ~/python/bin/activate" | tee -a ~/.bashrc
+```
+
+### Configure the terminal to load the ~/.local libraries
+
+```bash
+echo "export LD_LIBRARY_PATH=${HOME}/.local/lib64:${HOME}/.local/lib" | tee -a ~/.bashrc
 ```
 
 ## Install the latest Ansible
